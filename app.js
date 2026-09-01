@@ -20,11 +20,11 @@ const PORT = process.env.PORT || 5000;
 // MONGO_URI আগে ডিক্লেয়ার করতে হবে
 const MONGO_URI = process.env.MONGO_URI;
 
-app.use(cors({
-    origin:'https://mega-store-e-commerce.vercel.app',
-    credentials: true
-}));
-// app.use(cors())
+// app.use(cors({
+//     origin:'https://mega-store-e-commerce.vercel.app',
+//     credentials: true
+// }));
+app.use(cors())
 // Middlewares
 app.use(express.json({ limit: '50mb' }));
 app.use(express.urlencoded({ limit: '50mb', extended: true }));
