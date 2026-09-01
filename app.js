@@ -21,7 +21,7 @@ const PORT = process.env.PORT || 5000;
 const MONGO_URI = process.env.MONGO_URI;
 
 app.use(cors({
-    origin:'https://mega-store-e-commerce.vercel.app/',
+    origin:'https://mega-store-e-commerce.vercel.app',
     credentials: true
 }));
 
